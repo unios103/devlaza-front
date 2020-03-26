@@ -4,11 +4,11 @@ import "./Header.css"
 type HeaderState = {
 	searchbox: string
 }
+type HeaderProps = {}
 
-class Header extends React.Component<{}, HeaderState> {
-	
-	constructor(){
-		super({});
+class Header extends React.Component<HeaderProps, HeaderState> {
+	constructor(props: HeaderProps){
+		super(props);
 		this.state = {
 			searchbox: ""
 		}
