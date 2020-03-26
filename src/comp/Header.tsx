@@ -1,5 +1,6 @@
 import * as React from "react"
 import "./Header.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 type HeaderState = {
 	searchbox: string
@@ -47,7 +48,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
 						表示上の順番とHTML上の順番が逆になってます
 					*/}
 					<div className="header-search-btn">
-						<i className="fas fa-search"></i>
+						<FontAwesomeIcon icon="search" />
 					</div>
 					<div className="header-search-text">
 						<input
