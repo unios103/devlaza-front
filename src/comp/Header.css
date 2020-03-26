@@ -2,7 +2,12 @@
 
 .header {
 	height: 70px;
-	background-color: #6094c4
+	background-color: #6094c4;
+	-ms-user-select: none; /* IE 10+ */
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .header-logo {
@@ -46,6 +51,12 @@ font-size: 32px;
 
 	font-size: 16px;
 	vertical-align: middle;
+	
+	-ms-user-select: auto; /* IE 10+ */
+	-moz-user-select: -moz-auto;
+	-khtml-user-select: auto;
+	-webkit-user-select: auto;
+	user-select: auto;
 
 	transition: all 0.25s;
 
