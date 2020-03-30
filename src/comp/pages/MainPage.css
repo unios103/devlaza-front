@@ -1,0 +1,43 @@
+.mainpage-wrapper {
+	display: block;
+	/* background-color: #e5f0fd; */
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	padding: 50px 50px;
+	
+	text-align: center;
+
+}
+
+.mainpage-title {
+	font-size: 350%;
+	font-weight: bold;
+	
+	margin: 15px;
+}
+
+.mainpage-catchcopy {
+	font-size: 125%;
+	color: #555555;
+
+	margin-top: 30px;
+
+}
+
+.mainpage-button-wrapper {
+	display: inline-block;
+	margin: 5px 15px;
+}
+
+.mainpage-buttons {
+	margin-top: 30px;
+}
+
+.button-icon {
+	margin-right: 5px
+}
