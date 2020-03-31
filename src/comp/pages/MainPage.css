@@ -1,17 +1,4 @@
 .mainpage-wrapper {
-	display: block;
-	/* background-color: #e5f0fd; */
-
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-
-	padding: 50px 50px;
-	
-	text-align: center;
-
 }
 
 .mainpage-title {

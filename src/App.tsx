@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Header from "./comp/Header";
+import Footer from "./comp/Footer";
 
 import ProjectListView from "./comp/ProjectListView"
 
@@ -22,6 +23,7 @@ function App() {
 					<Route exact path="/" component={Pages.MainPage} />
 				</Router>
 			</div>
+			<Footer />
     </div>
   );
 }

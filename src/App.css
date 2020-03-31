@@ -3,9 +3,16 @@
 }
 
 .app-content-wrapper {
-	position: absolute;
-	top: 70px;
-	left: 0;
-	right: 0;
-	bottom: 0;
+
+	min-height: calc(100vh - 70px - 170px); /* Viewport's full size - header - footer */
+	box-sizing: border-box;
+
+	display: block;
+	/* background-color: #e5f0fd; */
+
+
+	padding: 50px 50px;
+	
+	text-align: center;
+
 }
