@@ -25,7 +25,7 @@
 
 .footer-row {
 	display: block;
-	width: calc(100vw / 3 - 10px);
+	width: calc(100vw / 3 - 10px - (100vw - 100%) / 3);
 	float: left;
 
 	font-size: 85%;
@@ -47,4 +47,15 @@
 	list-style: none;
 	padding-left: 15px;
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 550px) {
+
+	.footer {
+		height: 35px;
+	}
+
+	.footer-row {
+		display: none;
+	}
 }

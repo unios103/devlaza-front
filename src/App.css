@@ -11,8 +11,14 @@
 	/* background-color: #e5f0fd; */
 
 
-	padding: 50px 50px;
+	padding: 30px;
 	
 	text-align: center;
 
+}
+
+@media screen and (max-width: 550px) {
+	.app-content-wrapper {
+		min-height: calc(100vh - 70px - 35px); /* Viewport's full size - header - footer */
+	}
 }

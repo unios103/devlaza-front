@@ -38,7 +38,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
 					<div className="header-btn">
 						ログイン
 					</div>
-					<div className="header-btn">
+					<div className="header-btn resp-low-prio">
 						人気プロジェクト
 					</div>
 				</div>

@@ -25,6 +25,9 @@
 	margin-top: 30px;
 }
 
-.button-icon {
-	margin-right: 5px
+@media screen and (max-width: 384px) {
+	.mainpage-button-wrapper {
+		margin: 5px;
+	}
 }
+
