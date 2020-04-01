@@ -25,7 +25,7 @@
 
 .footer-row {
 	display: block;
-	width: calc(100vw / 3 - 10px);
+	width: calc(100vw / 3 - 10px - (100vw - 100%) / 3);
 	float: left;
 
 	font-size: 85%;
