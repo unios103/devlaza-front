@@ -110,9 +110,7 @@ class ProjectDetailPage extends React.Component<ProjectDetailPageProps, ProjectD
 					<div className="pdetail-introduction">
 						<div className="pdetail-property">
 							{this.state.created_at} 作成
-							<MaterialUI.Icon 
-								style={favIconStyle}
-							>favorite</MaterialUI.Icon>
+							<Icons.Favorite style={favIconStyle} />
 							{this.state.favs}
 						</div>
 						{this.state.introduction}
