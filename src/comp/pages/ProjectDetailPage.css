@@ -1,8 +1,8 @@
-.pdetail-title-wrapper {
+.pdetail-name-wrapper {
 	border-bottom: 2px solid #eeeeee;
 }
 
-.pdetail-title {
+.pdetail-name {
 	font-size: 200%;
 	font-weight: bold;
 	width: 100%;
@@ -12,7 +12,7 @@
 	display: flex;
 }
 
-.pdetail-description {
+.pdetail-introduction {
 	display: block;
 	width: 70%;
 	padding-top: 10px;
@@ -24,6 +24,11 @@
 	padding: 10px;
 	padding-left: 5px;
 
+}
+
+.pdetail-property {
+	font-size: 75%;
+	color: #999999;
 }
 
 .pdetail-property-wrapper {
@@ -43,3 +48,15 @@
 	width: 100%;
 	border-bottom: 1px solid #eeeeee;
 }
+
+.pdetail-site-title {
+	font-size: 75%;
+}
+
+.pdetail-site-url {
+	font-size: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
