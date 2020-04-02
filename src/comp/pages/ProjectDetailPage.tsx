@@ -1,6 +1,8 @@
 import * as React from "react"
 import "./ProjectDetailPage.css"
 
+import {RouteComponentProps} from 'react-router-dom'
+
 import * as MaterialUI from "@material-ui/core"
 
 import * as Icons from "@material-ui/icons"
@@ -9,6 +11,8 @@ import Avater from "../Avater"
 import ProjectTag from "../ProjectTag"
 
 /* --- ボタンのスタイル --- */
+
+type ProjectDetailPageProps = {} & RouteComponentProps<{uuid: string}>
 
 type ProjectDetailPageState = {
 	
@@ -28,10 +32,15 @@ type ProjectDetailPageState = {
 
 }
 
-// うっうっ…(use of any)
-class ProjectDetailPage extends React.Component<any, ProjectDetailPageState> {
+const favIconStyle = {
+	marginLeft: "1em",
+	fontSize: "90%",
+	verticalAlign: "middle"
+}
+
+class ProjectDetailPage extends React.Component<ProjectDetailPageProps, ProjectDetailPageState> {
 	
-	constructor(props: any){
+	constructor(props: ProjectDetailPageProps){
 		super(props);
 		this.state = {
 			name: "",
@@ -102,11 +111,7 @@ class ProjectDetailPage extends React.Component<any, ProjectDetailPageState> {
 						<div className="pdetail-property">
 							{this.state.created_at} 作成
 							<MaterialUI.Icon 
-								style={{
-									marginLeft: "1em",
-									fontSize: "90%",
-									verticalAlign: "middle"
-								}}
+								style={favIconStyle}
 							>favorite</MaterialUI.Icon>
 							{this.state.favs}
 						</div>
@@ -122,17 +127,17 @@ class ProjectDetailPage extends React.Component<any, ProjectDetailPageState> {
 
 							<h3>タグ</h3>
 							{this.state.tags.map((tag, index) => (
-								<ProjectTag tag_id={tag} key={"tag-" + index.toString()} />
+								<ProjectTag tag_id={tag} key={index} />
 							))}
 
 							<h3>参加者</h3>
 							{this.state.member.map((people, index) => (
-								<Avater uuid={people} key={"member-" + index.toString()} hiddenName/>
+								<Avater uuid={people} key={index} hiddenName/>
 							))}
 
 							<h3>関連サイト</h3>
 							{this.state.sites.map((site, index) => (
-								<div key={"sites-" + index.toString()}>
+								<div key={index}>
 									<div className="pdetail-site-title">
 										{site[0]}
 									</div>

@@ -71,7 +71,7 @@ class Avater extends React.Component<AvaterProps, AvaterState> {
 			>
 				<span className="avater-wrapper">
 					<span className="avater-pic">
-						<img src={this.state.picurl} alt={this.state.name + "'s icon"} height="24" />
+						<img src={this.state.picurl} alt={`${this.state.name}'s icon`} height="24" />
 					</span>
 					{nameElement}
 				</span>

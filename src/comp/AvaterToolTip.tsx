@@ -2,7 +2,6 @@ import * as React from "react"
 import "./AvaterToolTip.css"
 type AvaterToolTipProps = {
 	uuid: string
-	visible: boolean
 }
 
 type AvaterToolTipState = {
@@ -13,10 +12,6 @@ type AvaterToolTipState = {
 }
 
 class AvaterToolTip extends React.Component<AvaterToolTipProps, AvaterToolTipState> {
-	
-	static defaultProps = {
-		visible: false
-	}
 	
 	constructor(props: AvaterToolTipProps){
 		super(props);
@@ -48,7 +43,7 @@ class AvaterToolTip extends React.Component<AvaterToolTipProps, AvaterToolTipSta
 
 			<div className="avatertt-wrapper">
 				<span className="avatertt-pic">
-					<img src={this.state.picurl} alt={this.state.name + "'s icon"} height="48" />
+					<img src={this.state.picurl} alt={`${this.state.name}'s icon`} height="48" />
 				</span>
 				<div className="avatertt-name-wrapper">
 					<div className="avatertt-name">
