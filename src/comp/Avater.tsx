@@ -22,12 +22,14 @@ class Avater extends React.Component<AvaterProps, AvaterState> {
 
 	constructor(props: AvaterProps){
 		super(props)
-		this.setState({
+		this.state = {
+			name: "",
+			picurl: "",
 			is_loaded: false
-		})
+		}
 	}
 
-	componentWillMount() {
+	componentDidMount() {
 		// TODO: ここでAPIをぶっ叩く
 		this.setState({
 			name: this.props.uuid,

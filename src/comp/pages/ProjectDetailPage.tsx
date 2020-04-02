@@ -1,5 +1,4 @@
 import * as React from "react"
-import styled from "styled-components"
 import "./ProjectDetailPage.css"
 
 import * as MaterialUI from "@material-ui/core"
@@ -122,18 +121,18 @@ class ProjectDetailPage extends React.Component<any, ProjectDetailPageState> {
 							<Avater uuid={this.state.created_user} />
 
 							<h3>タグ</h3>
-							{this.state.tags.map((tag) => (
-								<ProjectTag tag_id={tag} />
+							{this.state.tags.map((tag, index) => (
+								<ProjectTag tag_id={tag} key={"tag-" + index.toString()} />
 							))}
 
 							<h3>参加者</h3>
-							{this.state.member.map((people) => (
-								<Avater uuid={people} hiddenName/>
+							{this.state.member.map((people, index) => (
+								<Avater uuid={people} key={"member-" + index.toString()} hiddenName/>
 							))}
 
 							<h3>関連サイト</h3>
-							{this.state.sites.map((site) => (
-								<div>
+							{this.state.sites.map((site, index) => (
+								<div key={"sites-" + index.toString()}>
 									<div className="pdetail-site-title">
 										{site[0]}
 									</div>
