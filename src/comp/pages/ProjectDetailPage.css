@@ -1,0 +1,45 @@
+.pdetail-title-wrapper {
+	border-bottom: 2px solid #eeeeee;
+}
+
+.pdetail-title {
+	font-size: 200%;
+	font-weight: bold;
+	width: 100%;
+}
+
+.pdetail-content {
+	display: flex;
+}
+
+.pdetail-description {
+	display: block;
+	width: 70%;
+	padding-top: 10px;
+	border-right: 2px solid #eeeeee;
+	float: left;
+
+	box-sizing: border-box;
+	
+	padding: 10px;
+	padding-left: 5px;
+
+}
+
+.pdetail-property-wrapper {
+	display: inline-block;
+	width: 30%;
+	float: left;
+
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.pdetail-property-wrapper h3{
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #555555;
+	width: 100%;
+	border-bottom: 1px solid #eeeeee;
+}
