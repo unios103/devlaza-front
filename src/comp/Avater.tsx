@@ -3,6 +3,12 @@ import "./Avater.css"
 
 import AvaterToolTip from "./AvaterToolTip"
 
+import 'react-tippy/dist/tippy.css'
+
+import {
+  Tooltip,
+} from 'react-tippy';
+
 type AvaterProps = {
 	uuid: string
 	hiddenName: boolean
@@ -55,15 +61,21 @@ class Avater extends React.Component<AvaterProps, AvaterState> {
 		}
 
 		return (
-			<span className="avater-wrapper">
-				<span className="avater-pic">
-					<img src={this.state.picurl} alt={this.state.name + "'s icon"} height="24" />
+			<Tooltip
+				html={<AvaterToolTip uuid={this.props.uuid} />}
+				animation="fade"
+				animateFill={false}
+				delay={300}
+				interactive={true}
+				theme="light"
+			>
+				<span className="avater-wrapper">
+					<span className="avater-pic">
+						<img src={this.state.picurl} alt={this.state.name + "'s icon"} height="24" />
+					</span>
+					{nameElement}
 				</span>
-				{nameElement}
-				<span className="avater-tooltip">
-					<AvaterToolTip uuid={this.props.uuid}/>
-				</span>
-			</span>
+			</Tooltip>
 		)
 	}
 

@@ -60,3 +60,21 @@
 	text-overflow: ellipsis;
 }
 
+@media screen and (max-width: 600px) {
+	
+	.pdetail-content {
+		display: block;
+	}
+
+	.pdetail-introduction {
+		display: block;
+		width: 100%;
+		border-right: none;
+		border-bottom: 3px solid #eeeeee;
+	}
+
+	.pdetail-property-wrapper {
+		display: block;
+		width: 100%;
+	}
+}
