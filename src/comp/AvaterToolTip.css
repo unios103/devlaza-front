@@ -1,0 +1,29 @@
+.avatertt-wrapper{
+	position: absolute;
+	right: 0;
+
+	display: flex;
+	padding: 20px;
+	border: 1px solid #666666;
+
+	border-radius: 3px;
+
+	background-color: white;
+	z-index: 1;
+}
+
+.avatertt-pic {
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.avatertt-name {
+	border-bottom: 1px solid #999999;
+	white-space: nowrap;
+}
+
+.avatertt-id {
+	font-family: monospace;
+	font-size: 90%;
+	white-space: nowrap;
+}

@@ -1,6 +1,8 @@
 import * as React from "react"
 import "./Avater.css"
 
+import AvaterToolTip from "./AvaterToolTip"
+
 type AvaterProps = {
 	uuid: string
 	hiddenName: boolean
@@ -56,6 +58,9 @@ class Avater extends React.Component<AvaterProps, AvaterState> {
 					<img src={this.state.picurl} alt={this.state.name + "'s icon"} height="24" />
 				</span>
 				{nameElement}
+				<span className="avater-tooltip">
+					<AvaterToolTip uuid={this.props.uuid}/>
+				</span>
 			</span>
 		)
 	}

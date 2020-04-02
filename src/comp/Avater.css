@@ -1,4 +1,5 @@
 .avater-wrapper {
+	position: relative;
 	margin: 3px;
 }
 
@@ -10,4 +11,25 @@
 .avater-name {
 	font-size: 16px;
 	font-family: monospace;
+}
+
+.avater-tooltip {
+	transition: all 0.25s 0.3s;
+	opacity: 0;
+	z-index:1;
+	visibility: hidden;
+	position: absolute;
+	bottom: -5px;
+
+}
+
+.avater-tooltip:before {
+  position: absolute;
+  top: 100%;
+	left: 50%;
+}
+
+.avater-wrapper:hover .avater-tooltip {
+	visibility: visible;
+	opacity: 1;
 }
