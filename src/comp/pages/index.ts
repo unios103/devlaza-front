@@ -1,3 +1,4 @@
 import MainPage from "./MainPage"
+import ProjectDetailPage from "./ProjectDetailPage"
 
-export { MainPage }
+export { MainPage, ProjectDetailPage }
