@@ -1,3 +1,13 @@
+a {
+  color: #555555;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
 .footer {
   box-sizing: border-box;
   position: relative;
