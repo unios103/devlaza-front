@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as styles from "css/comp/pages/CreateProjectPage.module.css";
 import * as CommonStyles from "css/comp/Common.module.css";
-
 import { TextField, Button } from "@material-ui/core";
 
 type CreateProjectPageProps = {};
@@ -55,6 +54,7 @@ class CreateProjectPage extends React.Component<
               id="project-name"
               label="名前"
               margin="normal"
+              multiline
               variant="outlined"
               fullWidth
               required
