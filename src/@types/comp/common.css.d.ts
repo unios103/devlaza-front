@@ -1,5 +1,5 @@
 declare const styles: {
-  readonly "ptag_wrapper": string;
+  readonly "pdetail_name": string;
 };
 export = styles;
 
